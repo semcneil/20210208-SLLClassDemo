@@ -86,6 +86,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a903280e49aedf2c48566bcbf6568d797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779905fea33dd60b81834787907ff91b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSLL.html#a779905fea33dd60b81834787907ff91b">addToTail</a> (int d)</td></tr>
 <tr class="separator:a779905fea33dd60b81834787907ff91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd9c20d5d0826bfeda892bebc92d4cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSLL.html#a7fd9c20d5d0826bfeda892bebc92d4cd">removeHead</a> ()</td></tr>
+<tr class="separator:a7fd9c20d5d0826bfeda892bebc92d4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af040cdc4c562e38d8292430576e7b240"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSLL.html#af040cdc4c562e38d8292430576e7b240">printList</a> ()</td></tr>
+<tr class="separator:af040cdc4c562e38d8292430576e7b240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -98,7 +102,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00026">26</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00027">27</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a903280e49aedf2c48566bcbf6568d797"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a903280e49aedf2c48566bcbf6568d797">&#9670;&nbsp;</a></span>SLL()</h2>
@@ -124,12 +128,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor </p>
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00035">35</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = NULL;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = NULL;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a> = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00036">36</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = NULL;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = NULL;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a> = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -157,18 +161,117 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds node to tail of list </p>
+<p>Adds node to tail of list</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>integer to add to tail of list </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00044">44</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                          {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classNode.html">Node</a>* newNode = <span class="keyword">new</span> <a class="code" href="classNode.html">Node</a>(d);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a> == 0) { <span class="comment">// the list is empty</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = newNode;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = newNode;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a>++;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00047">47</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                          {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classNode.html">Node</a>* newNode = <span class="keyword">new</span> <a class="code" href="classNode.html">Node</a>(d);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a> == 0) { <span class="comment">// the list is empty</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = newNode;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = newNode;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a>++;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        } <span class="keywordflow">else</span> { <span class="comment">// list is not empty</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a>-&gt;<a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a> = newNode; <span class="comment">// point tail node to newNode</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = newNode; <span class="comment">// point tail to newNode</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a>++; <span class="comment">// increment counter</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af040cdc4c562e38d8292430576e7b240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af040cdc4c562e38d8292430576e7b240">&#9670;&nbsp;</a></span>printList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SLL::printList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>prints the contents of the singly linked list </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00082">82</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                     {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classNode.html">Node</a>* curNode;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//if(n == 0) { // the list is empty</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> == NULL) { <span class="comment">// the list is empty could also check that head != NULL</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Empty list&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            curNode = <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="comment">//for(int ii = 0; ii &lt; n; ii++){ // since n is known</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">while</span>(curNode-&gt;<a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a> != NULL) { <span class="comment">// not dependent on n</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                cout &lt;&lt; curNode-&gt;<a class="code" href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">data</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span>(curNode-&gt;<a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a> != NULL){</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    cout &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                curNode = curNode-&gt;<a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            cout &lt;&lt; curNode-&gt;<a class="code" href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">data</a>; <span class="comment">// required for while loop method</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fd9c20d5d0826bfeda892bebc92d4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd9c20d5d0826bfeda892bebc92d4cd">&#9670;&nbsp;</a></span>removeHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SLL::removeHead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes the head node and returns the data from it </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00064">64</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                     {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> val;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classNode.html">Node</a>* old;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> != NULL) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            val = <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a>-&gt;<a class="code" href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">data</a>; <span class="comment">// collect the value</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            old = <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a>; <span class="comment">// collect pointer to head node to delete it</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a>-&gt;<a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a>; <span class="comment">// move the head pointer</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">delete</span> old; <span class="comment">// free the memory used by this node required since created with new</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a>--; <span class="comment">// without this get a segfault</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span>(val);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span>(-999999); <span class="comment">// need to pass by reference and return bool to fix this</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -185,7 +288,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00028">28</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00029">29</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +304,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00030">30</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00031">31</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +320,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00029">29</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00030">30</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,10 +328,12 @@ Public Attributes</h2></td></tr>
 <li>/home/drseth/CPTR227/20210208-SLLClassDemo/src/<a class="el" href="main_8cpp_source.html">main.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassSLL_html_aba913019217721f1a3b55d68f715919d"><div class="ttname"><a href="classSLL.html#aba913019217721f1a3b55d68f715919d">SLL::head</a></div><div class="ttdeci">Node * head</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00028">main.cpp:28</a></div></div>
-<div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00012">main.cpp:12</a></div></div>
-<div class="ttc" id="aclassSLL_html_a8da2544f8edd22e4b58161a7e3e81976"><div class="ttname"><a href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">SLL::n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00030">main.cpp:30</a></div></div>
-<div class="ttc" id="aclassSLL_html_a7d9ec4ffde957ed81df73cc6826e1303"><div class="ttname"><a href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">SLL::tail</a></div><div class="ttdeci">Node * tail</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00029">main.cpp:29</a></div></div>
+<div class="ttc" id="aclassNode_html_ae64451cd6c118b6fe8369cb36bc9af06"><div class="ttname"><a href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">Node::nextNode</a></div><div class="ttdeci">Node * nextNode</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00016">main.cpp:16</a></div></div>
+<div class="ttc" id="aclassSLL_html_aba913019217721f1a3b55d68f715919d"><div class="ttname"><a href="classSLL.html#aba913019217721f1a3b55d68f715919d">SLL::head</a></div><div class="ttdeci">Node * head</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00029">main.cpp:29</a></div></div>
+<div class="ttc" id="aclassNode_html_a87c003c9f600e3fc58e6e90835f0b605"><div class="ttname"><a href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">Node::data</a></div><div class="ttdeci">int data</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00015">main.cpp:15</a></div></div>
+<div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00013">main.cpp:13</a></div></div>
+<div class="ttc" id="aclassSLL_html_a8da2544f8edd22e4b58161a7e3e81976"><div class="ttname"><a href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">SLL::n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00031">main.cpp:31</a></div></div>
+<div class="ttc" id="aclassSLL_html_a7d9ec4ffde957ed81df73cc6826e1303"><div class="ttname"><a href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">SLL::tail</a></div><div class="ttdeci">Node * tail</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00030">main.cpp:30</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

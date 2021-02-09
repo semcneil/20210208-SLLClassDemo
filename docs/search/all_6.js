@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tail_9',['tail',['../classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303',1,'SLL']]]
+  ['removehead_9',['removeHead',['../classSLL.html#a7fd9c20d5d0826bfeda892bebc92d4cd',1,'SLL']]]
 ];
