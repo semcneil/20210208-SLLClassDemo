@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>aardvark: /home/drseth/CPTR227/doxygen-cmake-github/src/main.cpp Source File</title>
+<title>Class Demo Singly Linked List: /home/drseth/CPTR227/20210208-SLLClassDemo/src/main.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">aardvark
-   &#160;<span id="projectnumber">0.3.0</span>
+   <div id="projectname">Class Demo Singly Linked List
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
   </td>
  </tr>
@@ -73,18 +73,56 @@ $(function() {
 <a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="main_8cpp.html#aa99823a0fc8313c9c32541ce768fb801">   21</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#aa99823a0fc8313c9c32541ce768fb801">add</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span>(a + b);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classNode.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classNode.html">Node</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">data</a>; <span class="comment">// data in the node</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">   15</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a>; <span class="comment">// pointer to the next node</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classNode.html#a91129f762eca79502555c91c556cd0ec">   20</a></span>&#160;    <a class="code" href="classNode.html#a91129f762eca79502555c91c556cd0ec">Node</a>(<span class="keywordtype">int</span> d) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">data</a> = d;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">nextNode</a> = NULL;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0">   26</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0">main</a>(<span class="keywordtype">int</span>, <span class="keywordtype">char</span>**) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Hello, world! Ver 2.1\n&quot;</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classSLL.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSLL.html">SLL</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classSLL.html#aba913019217721f1a3b55d68f715919d">   28</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a>; <span class="comment">// pointer to the first node in the list</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">   29</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a>; <span class="comment">// pointer to the last node in the list</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a>; <span class="comment">// count of how many nodes are in the list</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classSLL.html#a903280e49aedf2c48566bcbf6568d797">   35</a></span>&#160;    <a class="code" href="classSLL.html#a903280e49aedf2c48566bcbf6568d797">SLL</a>() {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = NULL;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = NULL;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a> = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classSLL.html#a779905fea33dd60b81834787907ff91b">   44</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classSLL.html#a779905fea33dd60b81834787907ff91b">addToTail</a>(<span class="keywordtype">int</span> d) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classNode.html">Node</a>* newNode = <span class="keyword">new</span> <a class="code" href="classNode.html">Node</a>(d);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a> == 0) { <span class="comment">// the list is empty</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="classSLL.html#aba913019217721f1a3b55d68f715919d">head</a> = newNode;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">tail</a> = newNode;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">n</a>++;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0">   55</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0">main</a>(<span class="keywordtype">int</span>, <span class="keywordtype">char</span>**) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classSLL.html">SLL</a> myList;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Hello, world! Ver 2.1\n&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="amain_8cpp_html_a2c3f6775325c30275d11c6abee2db6a0"><div class="ttname"><a href="main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0">main</a></div><div class="ttdeci">int main(int, char **)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00026">main.cpp:26</a></div></div>
-<div class="ttc" id="amain_8cpp_html_aa99823a0fc8313c9c32541ce768fb801"><div class="ttname"><a href="main_8cpp.html#aa99823a0fc8313c9c32541ce768fb801">add</a></div><div class="ttdeci">int add(int a, int b)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00021">main.cpp:21</a></div></div>
+<div class="ttc" id="aclassNode_html_ae64451cd6c118b6fe8369cb36bc9af06"><div class="ttname"><a href="classNode.html#ae64451cd6c118b6fe8369cb36bc9af06">Node::nextNode</a></div><div class="ttdeci">Node * nextNode</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00015">main.cpp:15</a></div></div>
+<div class="ttc" id="aclassSLL_html_a779905fea33dd60b81834787907ff91b"><div class="ttname"><a href="classSLL.html#a779905fea33dd60b81834787907ff91b">SLL::addToTail</a></div><div class="ttdeci">bool addToTail(int d)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00044">main.cpp:44</a></div></div>
+<div class="ttc" id="aclassSLL_html_aba913019217721f1a3b55d68f715919d"><div class="ttname"><a href="classSLL.html#aba913019217721f1a3b55d68f715919d">SLL::head</a></div><div class="ttdeci">Node * head</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00028">main.cpp:28</a></div></div>
+<div class="ttc" id="aclassSLL_html"><div class="ttname"><a href="classSLL.html">SLL</a></div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00026">main.cpp:26</a></div></div>
+<div class="ttc" id="aclassNode_html_a87c003c9f600e3fc58e6e90835f0b605"><div class="ttname"><a href="classNode.html#a87c003c9f600e3fc58e6e90835f0b605">Node::data</a></div><div class="ttdeci">int data</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aclassSLL_html_a903280e49aedf2c48566bcbf6568d797"><div class="ttname"><a href="classSLL.html#a903280e49aedf2c48566bcbf6568d797">SLL::SLL</a></div><div class="ttdeci">SLL()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00035">main.cpp:35</a></div></div>
+<div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00012">main.cpp:12</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a2c3f6775325c30275d11c6abee2db6a0"><div class="ttname"><a href="main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0">main</a></div><div class="ttdeci">int main(int, char **)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00055">main.cpp:55</a></div></div>
+<div class="ttc" id="aclassSLL_html_a8da2544f8edd22e4b58161a7e3e81976"><div class="ttname"><a href="classSLL.html#a8da2544f8edd22e4b58161a7e3e81976">SLL::n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00030">main.cpp:30</a></div></div>
+<div class="ttc" id="aclassSLL_html_a7d9ec4ffde957ed81df73cc6826e1303"><div class="ttname"><a href="classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303">SLL::tail</a></div><div class="ttdeci">Node * tail</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00029">main.cpp:29</a></div></div>
+<div class="ttc" id="aclassNode_html_a91129f762eca79502555c91c556cd0ec"><div class="ttname"><a href="classNode.html#a91129f762eca79502555c91c556cd0ec">Node::Node</a></div><div class="ttdeci">Node(int d)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00020">main.cpp:20</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

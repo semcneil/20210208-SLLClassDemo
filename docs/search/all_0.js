@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['add_0',['add',['../main_8cpp.html#aa99823a0fc8313c9c32541ce768fb801',1,'main.cpp']]]
+  ['addtotail_0',['addToTail',['../classSLL.html#a779905fea33dd60b81834787907ff91b',1,'SLL']]]
 ];
