@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head_2',['head',['../classSLL.html#aba913019217721f1a3b55d68f715919d',1,'SLL']]]
+  ['get_3',['get',['../classSLL.html#a4b13e952ebe77ae22fbb88586bc2ce0c',1,'SLL']]]
 ];

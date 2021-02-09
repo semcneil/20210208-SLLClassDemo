@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['n_5',['n',['../classSLL.html#a8da2544f8edd22e4b58161a7e3e81976',1,'SLL']]],
-  ['nextnode_6',['nextNode',['../classNode.html#ae64451cd6c118b6fe8369cb36bc9af06',1,'Node']]],
-  ['node_7',['Node',['../classNode.html',1,'Node'],['../classNode.html#a91129f762eca79502555c91c556cd0ec',1,'Node::Node()']]]
+  ['main_5',['main',['../main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0',1,'main.cpp']]],
+  ['main_2ecpp_6',['main.cpp',['../main_8cpp.html',1,'']]]
 ];
