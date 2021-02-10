@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tail_13',['tail',['../classSLL.html#a7d9ec4ffde957ed81df73cc6826e1303',1,'SLL']]]
+  ['sll_13',['SLL',['../classSLL.html',1,'SLL'],['../classSLL.html#a903280e49aedf2c48566bcbf6568d797',1,'SLL::SLL()']]]
 ];

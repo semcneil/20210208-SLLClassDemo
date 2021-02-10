@@ -8,6 +8,9 @@
  */
 
 #include <iostream>
+#include <chrono> // for sleep
+#include <thread> // for threads to tell which to sleep
+#include <unistd.h> // for getpid
 using namespace std;
 
 class Node {
@@ -135,6 +138,13 @@ public:
     }
 
     /**
+     * returns length of list
+     */
+    int length() {
+        return(n);
+    }
+
+    /**
      * Prints the list to stdout
      */
     void printList() {
@@ -156,74 +166,28 @@ public:
 int main(int, char**) {
     SLL myList;
     int retData; // for data from remove
+    int nTimes = 1000000;
 
-    myList.printList();
-    myList.addToTail(1);
-    myList.printList();
-    myList.addToTail(2);
-    myList.printList();
-    myList.addToTail(3);
-    myList.printList();
-    myList.addToTail(4);
-    myList.printList();
-    myList.addToTail(5);
-    myList.printList();
+    cout << "Process ID: " << getpid() << endl;
+    cout << "Enter number and press enter to continue";
+    cin >> retData;    
 
-    cout << "get(0) = " << myList.get(0) << endl;
-    cout << "get(1) = " << myList.get(1) << endl;
-    cout << "get(4) = " << myList.get(4) << endl;
-    cout << "get(5) = " << myList.get(5) << endl;
-    cout << "get(7) = " << myList.get(7) << endl;
-    cout << "get(-3) = " << myList.get(-3) << endl;
+    for(int ii = 0; ii < nTimes; ii++) {
+        myList.addToTail(ii);
+        //this_thread::sleep_for(chrono::microseconds(1));
+    }
 
-    myList.addMiddle(3,10);
-    myList.printList();
-    myList.addMiddle(3,11);
-    myList.printList();
-    myList.addMiddle(6,12);
-    myList.printList();
-    myList.addMiddle(0,13);
-    myList.printList();
+    cout << "Finished adding elements, Enter number and press enter to continue";
+    cin >> retData;
 
+//    cout << "get(1) = " << myList.get(1) << endl;
 
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
+//    myList.addMiddle(myList.length()/2,10);
+
+    for(int ii = 0; ii < nTimes; ii++) {
+        myList.removeHead(retData);
+        //this_thread::sleep_for(chrono::microseconds(1));
+    }
+    cout << "Removed all elements. Enter number and press enter to continue";
+    cin >> retData;
 }
