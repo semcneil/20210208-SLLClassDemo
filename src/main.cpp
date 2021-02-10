@@ -7,7 +7,8 @@
  * 
  */
 
-#include <iostream>
+#include <iostream> // for cin and cout
+#include <unistd.h> // for getpid
 using namespace std;
 
 class Node {
@@ -135,6 +136,13 @@ public:
     }
 
     /**
+     * Returns the length of the list
+     */
+    int length() {
+        return(n);
+    }
+
+    /**
      * Prints the list to stdout
      */
     void printList() {
@@ -156,74 +164,27 @@ public:
 int main(int, char**) {
     SLL myList;
     int retData; // for data from remove
+    long int nTimes = 10000000; // number of items to work with
 
-    myList.printList();
-    myList.addToTail(1);
-    myList.printList();
-    myList.addToTail(2);
-    myList.printList();
-    myList.addToTail(3);
-    myList.printList();
-    myList.addToTail(4);
-    myList.printList();
-    myList.addToTail(5);
-    myList.printList();
+    cout << "Process ID: " << getpid() << endl;
+    cout << "Enter a number and press enter to continue";
+    cin >> retData;
 
-    cout << "get(0) = " << myList.get(0) << endl;
-    cout << "get(1) = " << myList.get(1) << endl;
-    cout << "get(4) = " << myList.get(4) << endl;
-    cout << "get(5) = " << myList.get(5) << endl;
-    cout << "get(7) = " << myList.get(7) << endl;
-    cout << "get(-3) = " << myList.get(-3) << endl;
+    for(long int ii = 0; ii < nTimes; ii++) {
+        myList.addToTail(1);
+    }
 
-    myList.addMiddle(3,10);
-    myList.printList();
-    myList.addMiddle(3,11);
-    myList.printList();
-    myList.addMiddle(6,12);
-    myList.printList();
-    myList.addMiddle(0,13);
-    myList.printList();
+    cout << "Create list " << myList.length() << " long" << endl;
+    cout << "Enter a number and press enter to continue: ";
+    cin >> retData;
+//    cout << "get(1) = " << myList.get(1) << endl;
 
+//    myList.addMiddle(3,10);
 
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
-    if(myList.removeHead(retData))
-        cout << "Removed " << retData << endl;
-    else
-        cout << "list was empty" << endl;
-    myList.printList();
+    for(int ii = 0; ii < nTimes; ii++) {
+        myList.removeHead(retData);
+    }
+    cout << "List is now " << myList.length() << " long" << endl;
+    cout << "Enter a number and press enter to continue: ";
+    cin >> retData;
 }
